@@ -1,5 +1,6 @@
 import "./App.css";
 import { CourseCarousel } from "./components/CourseCarousel";
+import { FeaturesSection } from "./components/FeaturesSection";
 import { Header } from "./components/Header";
 import { TrainingPrograms } from "./components/TrainingPrograms";
 
@@ -9,6 +10,7 @@ export const App = () => {
       <Header />
       <CourseCarousel />
       <TrainingPrograms />
+      <FeaturesSection />
     </>
   );
 };
