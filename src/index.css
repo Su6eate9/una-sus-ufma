@@ -19,14 +19,25 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Colors */
+  --title-color: #043463;
   --text-color: #000;
   --text-color-two: #fff;
+  --text-color-description: #333;
   --header-color: #043463;
   --background-color: #f9f9f9;
   --background-color-two: #e9eef5;
+  --background-color-three: #f5f9ff;
+  --background-color-four: #043463;
+  --background-color-five: #ccc
   --footer_color: #0d7cce;
   --border-color: #fff;
   --border-color-two: #000;
+  --border-color-three: #043463;
+  --indicator-active: #043463;
+  --indicator-inactive: #d9d9d9;
+  --button-primary: #0d7cce;
+  --button-secondary: #f5f9ff;
+  --button-hover: #26a5ff;
 }
 
 body {
