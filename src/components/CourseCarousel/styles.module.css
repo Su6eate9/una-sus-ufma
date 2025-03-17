@@ -1,11 +1,15 @@
-.course-carousel {
+.containerBox,
+.carousel {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
+}
+
+.carousel {
   flex-wrap: wrap;
   position: relative;
-  width: 100vw;
   min-height: 40rem;
   overflow: hidden;
   background-color: var(--background-color);
@@ -15,47 +19,46 @@
   background-position: left;
   background-size: auto 130%;
   background-position: 80%;
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
 }
 
-.carousel-container {
+.carouselContainer {
   width: 100%;
   overflow: hidden;
   max-width: 80rem;
 }
 
-.carousel-slide {
+.carouselTrack {
   display: flex;
   transition: transform 0.5s ease;
   width: 100%;
 }
 
-.carousel-item {
+.carouselItem {
   min-width: 100%;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
 }
 
-.carousel-content {
+.carouselContent {
   /* order: 1; */
   padding-bottom: 1.5rem;
 }
 
-.carousel-image {
+.carouselImage {
   /* order: 2; */
   text-align: center;
   margin-top: 1rem;
 }
 
-.carousel-image img {
+.carouselImage img {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
   /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
 }
 
-.course-title {
+.courseTitle {
   color: var(--title-color);
   font-size: 1.5rem;
   font-weight: 700;
@@ -63,14 +66,14 @@
   line-height: 1.3;
 }
 
-.course-description {
+.courseDescription {
   color: var(--text-color-description);
   font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
 }
 
-.cta-button {
+.ctaButton {
   background-color: var(--button-primary);
   color: var(--text-color-two);
   border: none;
@@ -83,12 +86,12 @@
   transition: background-color 0.3s;
 }
 
-.cta-button:hover {
+.ctaButton:hover {
   background-color: var(--button-hover);
 }
 
-.carousel-navigation,
-.carousel-arrow {
+.carouselNavigation,
+.carouselArrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,12 +100,12 @@
   transform: translateY(-50%);
 }
 
-.carousel-navigation {
+.carouselNavigation {
   width: 100%;
   max-width: 90rem;
 }
 
-.carousel-arrow {
+.carouselArrow {
   width: 40px;
   height: 40px;
   background-color: var(--background-color);
@@ -113,21 +116,21 @@
   z-index: 10;
 }
 
-.carousel-arrow.prev {
+.carouselArrow.prev {
   left: 10px;
 }
 
-.carousel-arrow.next {
+.carouselArrow.next {
   right: 10px;
 }
 
-.carousel-arrow svg {
+.carouselArrow svg {
   width: 20px;
   height: 20px;
   stroke: var(--border-color-three);
 }
 
-.carousel-indicators {
+.indicators {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -150,79 +153,79 @@
 }
 
 @media (min-width: 768px) {
-  .carousel-item {
+  .carouselItem {
     flex-direction: row;
     align-items: center;
     padding: 2rem;
   }
 
-  .carousel-content {
-    order: 1;
+  .carouselContent {
+    /* order: 1; */
     flex: 1;
     padding-right: 2rem;
     padding-bottom: 0;
   }
 
-  .carousel-image {
+  .carouselImage {
     order: 2;
     flex: 1;
     margin-top: 0;
   }
 
-  .course-title {
+  .courseTitle {
     font-size: 2rem;
   }
 
-  .course-description {
+  .courseDescription {
     font-size: 1rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .carousel-container {
+  .carouselContainer {
     max-width: 55rem;
   }
-  .carousel-item {
+  .carouselItem {
     padding: 3rem;
   }
 
-  .course-title {
+  .courseTitle {
     font-size: 2.25rem;
   }
 
-  .carousel-content {
+  .carouselContent {
     padding-right: 3rem;
   }
 
-  .carousel-arrow {
+  .carouselArrow {
     width: 60px;
     height: 60px;
   }
 
-  .carousel-arrow.prev {
+  .carouselArrow.prev {
     left: 40px;
   }
 
-  .carousel-arrow.next {
+  .carouselArrow.next {
     right: 40px;
   }
 }
 
 @media (min-width: 1280px) {
-  .carousel-container {
+  .carouselContainer {
     max-width: 75rem;
   }
 
-  .carousel-arrow {
+  .carouselArrow {
     width: 80px;
     height: 80px;
   }
 
-  .carousel-arrow.prev {
+  .carouselArrow.prev {
     left: 60px;
   }
 
-  .carousel-arrow.next {
+  .carouselArrow.next {
     right: 60px;
   }
 }

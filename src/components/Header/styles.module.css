@@ -7,7 +7,7 @@
   width: 100vw;
 }
 
-.accessibility-bar {
+.accessibilityBar {
   background-color: var(--header-color);
   color: var(--text-color-two);
   display: flex;
@@ -18,14 +18,14 @@
   max-width: 1440px;
 }
 
-.accessibility-links,
-.accessibility-options {
+.accessibilityLinks,
+.accessibilityOptions {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
 }
 
-.accessibility-item {
+.accessibilityItem {
   color: var(--text-color-two);
   text-decoration: none;
   display: flex;
@@ -33,7 +33,7 @@
   width: 4.5rem;
 }
 
-.accessibility-number {
+.accessibilityNumber {
   background-color: var(--text-color-two);
   color: var(--header-color);
   border-radius: 1px;
@@ -46,12 +46,12 @@
   font-weight: bold;
 }
 
-.accessibility-item > span,
-.accessibility-options {
+.accessibilityItem > span,
+.accessibilityOptions {
   font-size: 0.625rem;
 }
 
-.accessibility-option {
+.accessibilityOption {
   color: var(--text-color-two);
   text-decoration: none;
   font-weight: 500;
@@ -59,7 +59,7 @@
 }
 
 /* Header principal */
-.main-header {
+.mainHeader {
   background-color: var(--header-color);
   display: flex;
   align-items: center;
@@ -71,14 +71,14 @@
   max-width: 1440px;
 }
 
-.logo-container {
+.logoContainer {
   display: flex;
   align-items: center;
 
   margin: 0 auto;
 }
 
-.logo-saiteava {
+.logoSaiteva {
   height: 2.5rem;
   margin-right: 0.25rem;
 }
@@ -90,16 +90,15 @@
   margin: 0 0.75rem;
 }
 
-.logo-unasus {
+.logoUnaSus {
   height: 2.5rem;
   margin-left: 0.25rem;
 }
 
-.search-container {
+.searchContainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* width: 300px; */
   background-color: var(--header-color);
   padding: 10px 0;
   border: 2px solid var(--border-color);
@@ -107,7 +106,7 @@
   position: relative;
 }
 
-.search-input {
+.searchInput {
   background-color: var(--header-color);
   border-radius: 1.25rem;
   color: var(--text-color-two);
@@ -120,7 +119,7 @@
   color: var(--text-color-two);
 }
 
-.search-button {
+.searchButton {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -130,11 +129,7 @@
   height: 1.25rem;
 }
 
-/* .main-nav {
-  margin-right: auto;
-} */
-
-.nav-links {
+.navLinks {
   display: flex;
   list-style: none;
   padding: 0;
@@ -142,7 +137,7 @@
   gap: 1.25rem;
 }
 
-.nav-link {
+.navLink {
   color: var(--text-color-two);
   text-decoration: none;
   font-weight: 500;
@@ -150,7 +145,7 @@
   padding: 0.3125rem 0;
 }
 
-.access-button {
+.accessButton {
   background-color: var(--text-color-two);
   color: var(--header-color);
   text-decoration: none;
@@ -161,7 +156,7 @@
 }
 
 @media (min-width: 720px) {
-  .accessibility-bar {
+  .accessibilityBar {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -169,37 +164,37 @@
     padding: 0.5rem 1.5rem;
   }
 
-  .accessibility-item {
+  .accessibilityItem {
     width: 100%;
   }
 
-  .accessibility-item > span,
-  .accessibility-options {
+  .accessibilityItem > span,
+  .accessibilityOptions {
     font-size: 0.75rem;
   }
 
-  .main-header {
+  .mainHeader {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0.5rem 1.5rem;
   }
 
-  .search-container {
+  .searchContainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 59%;
   }
 
-  .nav-links {
+  .navLinks {
     gap: 4rem;
     font-size: 1rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .accessibility-bar {
+  .accessibilityBar {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -207,33 +202,33 @@
     padding: 0.5rem 1.5rem;
   }
 
-  .accessibility-item {
+  .accessibilityItem {
     width: 9.375rem;
   }
 
-  .accessibility-number {
+  .accessibilityNumber {
     margin-left: 0.5rem;
   }
 
-  .main-header {
+  .mainHeader {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
     padding: 0.5rem 1.5rem;
   }
 
-  .logo-container {
+  .logoContainer {
     margin: 0;
   }
 
-  .search-container {
+  .searchContainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 30%;
   }
 
-  .nav-links {
+  .navLinks {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -241,7 +236,7 @@
     text-align: center;
   }
 
-  .access-button {
+  .accessButton {
     padding: 0.75rem 1rem;
     border-radius: 1.5rem;
     font-weight: bold;
@@ -250,7 +245,7 @@
 }
 
 @media (min-width: 1660px) {
-  .main-header {
+  .mainHeader {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -258,20 +253,19 @@
     gap: 1rem;
   }
 
-  .search-container {
+  .searchContainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 20%;
   }
 
-  .nav-links {
+  .navLinks {
     gap: 1.5rem;
     font-size: 1.5rem;
-    /* width: 9.25rem; */
   }
 
-  .access-button {
+  .accessButton {
     padding: 0.75rem 1rem;
     border-radius: 1.5rem;
     font-weight: bold;

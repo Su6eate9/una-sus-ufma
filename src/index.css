@@ -5,6 +5,7 @@
 }
 
 :root {
+  width: 100vw;
   font-family: Arial, sans-serif;
   line-height: 1.5;
   font-weight: 500;
@@ -24,7 +25,7 @@
   --text-color-two: #fff;
   --text-color-description: #333;
   --header-color: #043463;
-  --background-color: #f9f9f9;
+  --background-color: #fff;
   --background-color-two: #e9eef5;
   --background-color-three: #f5f9ff;
   --background-color-four: #043463;

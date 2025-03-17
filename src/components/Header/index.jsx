@@ -1,99 +1,99 @@
 import React from "react";
-import "./styles.css";
+import styles from "./styles.module.css";
 import saitevaLogo from "../../assets/saiteva-logo.svg";
 import unaSusLogo from "../../assets/una-sus-logo.svg";
 import searchIcon from "../../assets/lupa.svg";
 
 export const Header = () => {
   return (
-    <header className="header">
+    <header className={styles.header}>
       {/* Barra de acessibilidade */}
-      <div className="accessibility-bar">
-        <div className="accessibility-links">
-          <a href="#conteudo" className="accessibility-item">
+      <div className={styles.accessibilityBar}>
+        <div className={styles.accessibilityLinks}>
+          <a href="#conteudo" className={styles.accessibilityItem}>
             <span>Ir para o conteúdo</span>
-            <span className="accessibility-number">1</span>
+            <span className={styles.accessibilityNumber}>1</span>
           </a>
-          <a href="#menu" className="accessibility-item">
+          <a href="#menu" className={styles.accessibilityItem}>
             <span>Ir para o menu</span>
-            <span className="accessibility-number">2</span>
+            <span className={styles.accessibilityNumber}>2</span>
           </a>
-          <a href="#busca" className="accessibility-item">
+          <a href="#busca" className={styles.accessibilityItem}>
             <span>Ir para a busca</span>
-            <span className="accessibility-number">3</span>
+            <span className={styles.accessibilityNumber}>3</span>
           </a>
-          <a href="#rodape" className="accessibility-item">
+          <a href="#rodape" className={styles.accessibilityItem}>
             <span>Ir para o rodapé</span>
-            <span className="accessibility-number">4</span>
+            <span className={styles.accessibilityNumber}>4</span>
           </a>
         </div>
-        <div className="accessibility-options">
-          <a href="#mapa" className="accessibility-option">
+        <div className={styles.accessibilityOptions}>
+          <a href="#mapa" className={styles.accessibilityOption}>
             Mapa do site
           </a>
-          <a href="#contraste" className="accessibility-option">
+          <a href="#contraste" className={styles.accessibilityOption}>
             Alto contraste
           </a>
-          <a href="#acessibilidade" className="accessibility-option">
+          <a href="#acessibilidade" className={styles.accessibilityOption}>
             Acessibilidade
           </a>
         </div>
       </div>
 
       {/* Conteúdo principal do header */}
-      <div className="main-header">
-        <div className="logo-container">
+      <div className={styles.mainHeader}>
+        <div className={styles.logoContainer}>
           <img
             src={saitevaLogo}
             alt="Logo Saiteava"
-            className="logo-saiteava"
+            className={styles.logoSaiteva}
           />
-          <div className="divider"></div>
+          <div className={styles.divider}></div>
           <img
             src={unaSusLogo}
             alt="Logo UNA-SUS UFMA"
-            className="logo-unasus"
+            className={styles.logoUnaSus}
           />
         </div>
 
-        <div className="search-container">
+        <div className={styles.searchContainer}>
           <input
             type="text"
             placeholder="Pesquisar"
-            className="search-input"
+            className={styles.searchInput}
             id="busca"
           />
-          <button href="#" className="search-button">
+          <button href="#" className={styles.searchButton}>
             <img src={searchIcon} alt="" />
           </button>
         </div>
 
-        <nav className="main-nav" id="menu">
-          <ul className="nav-links">
+        <nav className={styles.mainNav} id="menu">
+          <ul className={styles.navLinks}>
             <li>
-              <a href="/inicio" className="nav-link">
+              <a href="/inicio" className={styles.navLink}>
                 Início
               </a>
             </li>
             <li>
-              <a href="/cursos" className="nav-link">
+              <a href="/cursos" className={styles.navLink}>
                 Cursos
               </a>
             </li>
             <li>
-              <a href="/programas" className="nav-link">
+              <a href="/programas" className={styles.navLink}>
                 Programas de formação
               </a>
             </li>
             <li>
-              <a href="/tutoriais" className="nav-link">
+              <a href="/tutoriais" className={styles.navLink}>
                 Tutoriais
               </a>
             </li>
           </ul>
         </nav>
 
-        <a href="/acessar" className="access-button">
+        <a href="/acessar" className={styles.accessButton}>
           Acessar ambiente
         </a>
       </div>
