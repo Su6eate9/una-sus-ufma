@@ -1,0 +1,83 @@
+.footer {
+  background-color: var(--footer-color);
+  color: var(--text-color-two);
+  padding: 2rem 1rem;
+  width: 100vw;
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.saiteAvaLogo,
+.unaSusLogo {
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+.logoSeparator {
+  width: 1px;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.developedBy {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+
+.footerLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footerLink {
+  color: var(--text-color-two);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.footerLink:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.linkSeparator {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 768px) {
+  .saiteAvaLogo,
+  .unaSusLogo {
+    height: 3rem;
+  }
+
+  .logoSeparator {
+    height: 3rem;
+  }
+
+  .developedBy {
+    font-size: 1rem;
+  }
+
+  .footerLink {
+    font-size: 0.9rem;
+  }
+}

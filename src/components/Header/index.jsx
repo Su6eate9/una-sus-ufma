@@ -5,6 +5,10 @@ import unaSusLogo from "../../assets/una-sus-logo.svg";
 import searchIcon from "../../assets/lupa.svg";
 
 export const Header = () => {
+  function scrollToBottom() {
+    window.scrollTo(0, document.body.scrollHeight);
+  }
+
   return (
     <header className={styles.header}>
       {/* Barra de acessibilidade */}
@@ -22,7 +26,11 @@ export const Header = () => {
             <span>Ir para a busca</span>
             <span className={styles.accessibilityNumber}>3</span>
           </a>
-          <a href="#rodape" className={styles.accessibilityItem}>
+          <a
+            href="#rodape"
+            className={styles.accessibilityItem}
+            onClick={scrollToBottom}
+          >
             <span>Ir para o rodapé</span>
             <span className={styles.accessibilityNumber}>4</span>
           </a>
